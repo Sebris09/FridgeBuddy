@@ -1,0 +1,48 @@
+[project]
+name = "fridgebuddy"
+version = "1.0.0"
+description = "FridgeBuddy - gestisci la tua dispensa con l'IA"
+requires-python = ">=3.12"
+dependencies = [
+    "flet==0.86.5",
+    "flet-camera",
+    "google-genai",
+    "pydantic",
+    "pillow",
+    "certifi",
+    "httpx",
+    "httpcore",
+    "anyio",
+    "sniffio",
+    "idna",
+    "h11",
+]
+
+[tool.flet]
+org = "com.fridgebuddy"
+product = "FridgeBuddy"
+company = "FridgeBuddy"
+copyright = "Copyright © 2026 FridgeBuddy"
+build_number = 1
+
+[tool.flet.app]
+module = "Home"
+
+[tool.flet.android]
+adaptive_icon_background = "#039BE5"
+
+[tool.flet.android.permission]
+"android.permission.CAMERA" = true
+"android.permission.INTERNET" = true
+
+[tool.flet.android.feature]
+"android.hardware.camera" = false
+"android.hardware.camera.any" = false
+"android.hardware.camera.autofocus" = false
+
+# Team ID Apple Developer, necessario per firmare la build (lo trovi su developer.apple.com > Membership)
+# [tool.flet.ios]
+# team = "IL_TUO_TEAM_ID"
+
+[tool.flet.ios.info]
+NSCameraUsageDescription = "FridgeBuddy usa la fotocamera per fotografare scontrini e prodotti da inserire in dispensa."
