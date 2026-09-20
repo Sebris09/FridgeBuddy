@@ -24,7 +24,7 @@
 
 ## Download
 
-Per il download su Android, aprire la cartella build e scaricare il file: "FridgeBuddy.apk"
+Per il download su Android, [clicca qui](https://github.com/Sebris09/FridgeBuddy/releases/download/V-1.0/fridgebuddy.apk).
 
 ## Struttura del progetto
 
@@ -75,7 +75,7 @@ Realizzato con usando [Flet](https://flet.dev/) e Google Gen AI.
 
 ## Download
 
-For the Android download, open the build folder and download the file: “FridgeBuddy.apk”.
+For the Android download, [click here](https://github.com/Sebris09/FridgeBuddy/releases/download/V-1.0/fridgebuddy.apk).
 
 ## Project structure
 
