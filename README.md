@@ -26,7 +26,8 @@
 
 Per il download su Android, [clicca qui](https://github.com/Sebris09/FridgeBuddy/releases/download/V-1.0/fridgebuddy.apk).
 
-<img width="3000" height="3000" alt="https_github_com_Sebris09_FridgeBuddy_releases_download_V-1_0_fridgebuddy_apk" src="https://github.com/user-attachments/assets/88dbe5c1-f501-4675-a72c-b24494886107" />
+<img width="200" height="200" alt="Untitled Design" src="https://github.com/user-attachments/assets/675314cb-dc47-4c54-8fef-039a84c7d32a" />
+
 
 
 ## Struttura del progetto
@@ -80,7 +81,8 @@ Realizzato con usando [Flet](https://flet.dev/) e Google Gen AI.
 
 For the Android download, [click here](https://github.com/Sebris09/FridgeBuddy/releases/download/V-1.0/fridgebuddy.apk).
 
-<img width="3000" height="3000" alt="https_github_com_Sebris09_FridgeBuddy_releases_download_V-1_0_fridgebuddy_apk" src="https://github.com/user-attachments/assets/5708e478-eee7-4326-9bdd-d3a8ff2bb8fb" />
+<img width="200" height="200" alt="Untitled Design" src="https://github.com/user-attachments/assets/ddc419c6-a538-4a8b-8ac5-c67464876f61" />
+
 
 ## Project structure
 
