@@ -344,7 +344,7 @@ def carica_scontrino(page: ft.Page):
                     ft.Text("Inserire il peso in grammi o la quantità di prodotti", size=12, weight=ft.FontWeight.W_300, text_align=ft.TextAlign.CENTER),
                     tf_quantita,
                     ft.Text("Scadenza prodotto", weight=ft.FontWeight.BOLD),
-                    ft.ElevatedButton("Seleziona data di scadenza", icon=ft.Icons.CALENDAR_MONTH, on_click=apri_datepicker),
+                    ft.TextButton("Seleziona data di scadenza", icon=ft.Icons.CALENDAR_MONTH, on_click=apri_datepicker),
                     testo_data,
                 ],
             ),

@@ -70,7 +70,7 @@ def pagina_ricetta(page: ft.Page):
     slider_tempo = ft.Slider(
         min=5, max=120, divisions=23, value=30,
         label="{value} min",
-        active_color=ft.Colors.LIGHT_BLUE_700,
+        active=ft.Colors.LIGHT_BLUE_700,
         on_change=aggiorna_tempo,
     )
 
@@ -108,9 +108,12 @@ def pagina_ricetta(page: ft.Page):
         bottone_scarica.text = "Dispensa aggiornata"
         page.update()
 
-    bottone_scarica = ft.ElevatedButton(
+    bottone_scarica = ft.TextButton(
         "Conferma e togli dalla dispensa", icon=ft.Icons.CHECK,
-        bgcolor=ft.Colors.LIGHT_BLUE_600, color=ft.Colors.WHITE,
+        style=ft.ButtonStyle(
+            bgcolor=ft.Colors.LIGHT_BLUE_600,
+            color=ft.Colors.WHITE,
+        ),
         on_click=scarica_prodotti, visible=False,
     )
 
@@ -124,9 +127,12 @@ def pagina_ricetta(page: ft.Page):
             bottone_salva.disabled = True
             page.update()
 
-    bottone_salva = ft.ElevatedButton(
+    bottone_salva = ft.TextButton(
         "Salva ricetta", icon=ft.Icons.BOOKMARK_BORDER,
-        bgcolor=ft.Colors.LIGHT_BLUE_600, color=ft.Colors.WHITE,
+        style=ft.ButtonStyle(
+            bgcolor=ft.Colors.LIGHT_BLUE_600,
+            color=ft.Colors.WHITE,
+        ),
         on_click=salvataggio, disabled=True,
     )
 
@@ -238,11 +244,13 @@ def pagina_ricetta(page: ft.Page):
             bottone_genera.disabled = False
             page.update()
 
-    bottone_genera = ft.ElevatedButton(
+    bottone_genera = ft.TextButton(
         content=ft.Text("Genera ricetta", size=17, weight=ft.FontWeight.BOLD),
-        bgcolor=ft.Colors.LIGHT_BLUE_600,
-        color=ft.Colors.WHITE,
-        style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=14), padding=18),
+        style=ft.ButtonStyle(
+            bgcolor=ft.Colors.LIGHT_BLUE_600,
+            color=ft.Colors.WHITE,
+            shape=ft.RoundedRectangleBorder(radius=14), padding=18
+        ),
         on_click=genera,
     )
 

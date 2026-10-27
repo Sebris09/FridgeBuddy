@@ -65,7 +65,7 @@ def dispensa(page: ft.Page):
         id_prod = prodotto["id"]
         testo_scadenza, colore_scadenza = formatta_scadenza(prodotto["scadenza"])
 
-        bottone_qta = ft.ElevatedButton(
+        bottone_qta = ft.TextButton(
             content=ft.Text(str(prodotto["qta"])),
             width=44, height=32,
             style=ft.ButtonStyle(padding=0, shape=ft.RoundedRectangleBorder(radius=10)),
@@ -97,7 +97,7 @@ def dispensa(page: ft.Page):
                 content=ft.Container(content=tf_qta, alignment=ft.Alignment.CENTER, height=60),
                 actions=[
                     ft.TextButton("Annulla", on_click=chiudi_dialog),
-                    ft.ElevatedButton("Salva", on_click=salva_qta),
+                    ft.TextButton("Salva", on_click=salva_qta),
                 ],
                 actions_alignment=ft.MainAxisAlignment.END,
             )

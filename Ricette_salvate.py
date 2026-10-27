@@ -34,9 +34,9 @@ def ricette_salvate(page: ft.Page):
         page.update()
         ricarica_lista()
 
-    bottone_scarica = ft.ElevatedButton(
+    bottone_scarica = ft.TextButton(
         "Conferma e togli dalla dispensa", icon=ft.Icons.CHECK,
-        bgcolor=ft.Colors.LIGHT_BLUE_600, color=ft.Colors.WHITE,
+        #bgcolor=ft.Colors.LIGHT_BLUE_600, color=ft.Colors.WHITE,
         on_click=scarica, visible=False,
     )
 
