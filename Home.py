@@ -199,16 +199,40 @@ def main(page: ft.Page):
 
         if nome_scheda == "home":
             area_contenuto.content = mostra_home()
+            btn_dispensa.icon_color=ft.Colors.GREY_700
+            btn_scontrino.icon_color=ft.Colors.GREY_700
+            btn_ricetta.icon_color=ft.Colors.GREY_700
+            btn_salvate.icon_color=ft.Colors.GREY_700
         elif nome_scheda == "dispensa":
             area_contenuto.content = dispensa(page)
+            btn_dispensa.icon_color=ft.Colors.LIGHT_BLUE_500
+            btn_scontrino.icon_color=ft.Colors.GREY_700
+            btn_ricetta.icon_color=ft.Colors.GREY_700
+            btn_salvate.icon_color=ft.Colors.GREY_700
         elif nome_scheda == "scontrino":
             area_contenuto.content = carica_scontrino(page)
+            btn_scontrino.icon_color=ft.Colors.LIGHT_BLUE_500
+            btn_dispensa.icon_color=ft.Colors.GREY_700
+            btn_ricetta.icon_color=ft.Colors.GREY_700
+            btn_salvate.icon_color=ft.Colors.GREY_700
         elif nome_scheda == "ricetta":
             area_contenuto.content = pagina_ricetta(page)
+            btn_ricetta.icon_color=ft.Colors.LIGHT_BLUE_500
+            btn_salvate.icon_color=ft.Colors.GREY_700
+            btn_dispensa.icon_color=ft.Colors.GREY_700
+            btn_scontrino.icon_color=ft.Colors.GREY_700
         elif nome_scheda == "ricette_salvate":
             area_contenuto.content = ricette_salvate(page)
+            btn_salvate.icon_color=ft.Colors.LIGHT_BLUE_500
+            btn_dispensa.icon_color=ft.Colors.GREY_700
+            btn_scontrino.icon_color=ft.Colors.GREY_700
+            btn_ricetta.icon_color=ft.Colors.GREY_700
         elif nome_scheda == "impostazioni":
             area_contenuto.content = schermata_impostazioni(page)
+            btn_dispensa.icon_color=ft.Colors.GREY_700
+            btn_scontrino.icon_color=ft.Colors.GREY_700
+            btn_ricetta.icon_color=ft.Colors.GREY_700
+            btn_salvate.icon_color=ft.Colors.GREY_700
 
         page.update()
 
@@ -217,11 +241,13 @@ def main(page: ft.Page):
     btn_dispensa = ft.IconButton(
         icon=ft.Icons.KITCHEN_OUTLINED, icon_size=27, tooltip="Dispensa",
         on_click=lambda e: naviga("dispensa"),
+        icon_color=ft.Colors.GREY_700,
     )
 
     btn_scontrino = ft.IconButton(
         icon=ft.Icons.RECEIPT_LONG_OUTLINED, icon_size=27, tooltip="Scansiona scontrino",
         on_click=lambda e: naviga("scontrino"),
+        icon_color=ft.Colors.GREY_700,
     )
 
     btn_home = ft.Container(
@@ -238,11 +264,13 @@ def main(page: ft.Page):
     btn_ricetta = ft.IconButton(
         icon=ft.Icons.RESTAURANT_MENU_OUTLINED, icon_size=27, tooltip="Ricetta",
         on_click=lambda e: naviga("ricetta"),
+        icon_color=ft.Colors.GREY_700,
     )
 
     btn_salvate = ft.IconButton(
         icon=ft.Icons.MENU_BOOK_OUTLINED, icon_size=27, tooltip="Ricette salvate",
         on_click=lambda e: naviga("ricette_salvate"),
+        icon_color=ft.Colors.GREY_700,
     )
 
     barra_navigazione = ft.Container(

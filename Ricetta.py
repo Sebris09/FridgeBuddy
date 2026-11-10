@@ -70,7 +70,7 @@ def pagina_ricetta(page: ft.Page):
     slider_tempo = ft.Slider(
         min=5, max=120, divisions=23, value=30,
         label="{value} min",
-        active=ft.Colors.LIGHT_BLUE_700,
+        #active=ft.Colors.LIGHT_BLUE_700,
         on_change=aggiorna_tempo,
     )
 
